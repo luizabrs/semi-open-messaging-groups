@@ -12,6 +12,7 @@ To build the code in Debian 12, first install the following dependencies.
 sudo apt install -y --no-install-recommends git build-essential cmake clang-14 python3
 sudo bash install_libsodium.sh
 ```
+Note, `install_libsodium.sh` will install libsodium system-wide, built from the `stable` branch of its repository.
 
 ## Running benchmarks
 
