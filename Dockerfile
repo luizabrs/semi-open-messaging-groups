@@ -4,8 +4,9 @@ WORKDIR /root
 
 # fetch dev dependencies
 RUN apt-get update
+RUN apt-get install -y --no-install-recommends git build-essential cmake clang-14
 RUN apt-get install -y --no-install-recommends apt-transport-https ca-certificates
-RUN apt-get install -y --no-install-recommends git build-essential cmake clang-14 python3
+RUN apt-get install -y --no-install-recommends python3
 
 # fetch and install libsodium
 ENV CC=/usr/bin/clang-14 CXX=/usr/bin/clang++-14
@@ -15,6 +16,9 @@ RUN bash install_libsodium.sh
 # copy implementation source
 COPY src /root/src
 COPY CMakeLists.txt /root/CMakeLists.txt
+COPY benchmarks.sh /root/benchmarks.sh
 COPY benchmark_table.py /root/benchmark_table.py
+RUN cmake .
+RUN mkdir /root/host
 
 CMD [ "bash" ]

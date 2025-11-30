@@ -2,41 +2,15 @@
 "50_40_10": [
   {
   "runtime": {
-    "ve_prove": 3,
-    "ve_verify": 3,
-    "user_vep_prove": 609,
-    "user_vep_verify": 583,
-    "server_vep_prove": 684,
-    "server_vep_verify": 566,
-    "intersection": 976,
-    "pre_protocol": 33,
-    "full_protocol": 3432
-  },
-  "bandwidth": {
-    "ve_statement": 2560,
-    "ve_proof": 96,
-    "user_vep_input": 1600,
-    "user_vep_statement": 1600,
-    "user_vep_proof": 665632,
-    "server_vep_input": 1600,
-    "server_vep_statement": 1600,
-    "server_vep_proof": 665632,
-    "ballots": 1280,
-    "full_protocol": 1343744
-  }
-  }
-,
-  {
-  "runtime": {
     "ve_prove": 2,
-    "ve_verify": 4,
-    "user_vep_prove": 676,
-    "user_vep_verify": 560,
-    "server_vep_prove": 899,
-    "server_vep_verify": 511,
-    "intersection": 1081,
-    "pre_protocol": 21,
-    "full_protocol": 3739
+    "ve_verify": 3,
+    "user_vep_prove": 709,
+    "user_vep_verify": 566,
+    "server_vep_prove": 644,
+    "server_vep_verify": 588,
+    "intersection": 919,
+    "pre_protocol": 34,
+    "full_protocol": 3436
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -56,13 +30,13 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 598,
-    "user_vep_verify": 512,
-    "server_vep_prove": 614,
-    "server_vep_verify": 518,
-    "intersection": 929,
-    "pre_protocol": 23,
-    "full_protocol": 3182
+    "user_vep_prove": 705,
+    "user_vep_verify": 564,
+    "server_vep_prove": 661,
+    "server_vep_verify": 564,
+    "intersection": 907,
+    "pre_protocol": 19,
+    "full_protocol": 3412
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -82,13 +56,13 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 607,
-    "user_vep_verify": 510,
-    "server_vep_prove": 645,
-    "server_vep_verify": 507,
-    "intersection": 916,
-    "pre_protocol": 21,
-    "full_protocol": 3196
+    "user_vep_prove": 638,
+    "user_vep_verify": 555,
+    "server_vep_prove": 644,
+    "server_vep_verify": 567,
+    "intersection": 902,
+    "pre_protocol": 20,
+    "full_protocol": 3316
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -108,13 +82,13 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 688,
-    "user_vep_verify": 522,
-    "server_vep_prove": 599,
-    "server_vep_verify": 524,
-    "intersection": 923,
-    "pre_protocol": 21,
-    "full_protocol": 3267
+    "user_vep_prove": 668,
+    "user_vep_verify": 557,
+    "server_vep_prove": 706,
+    "server_vep_verify": 573,
+    "intersection": 921,
+    "pre_protocol": 62,
+    "full_protocol": 3436
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -134,13 +108,13 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 724,
-    "user_vep_verify": 521,
-    "server_vep_prove": 606,
-    "server_vep_verify": 507,
-    "intersection": 933,
-    "pre_protocol": 21,
-    "full_protocol": 3301
+    "user_vep_prove": 661,
+    "user_vep_verify": 556,
+    "server_vep_prove": 631,
+    "server_vep_verify": 585,
+    "intersection": 922,
+    "pre_protocol": 19,
+    "full_protocol": 3365
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -160,13 +134,13 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 588,
-    "user_vep_verify": 503,
-    "server_vep_prove": 658,
-    "server_vep_verify": 508,
-    "intersection": 916,
-    "pre_protocol": 21,
-    "full_protocol": 3184
+    "user_vep_prove": 663,
+    "user_vep_verify": 554,
+    "server_vep_prove": 656,
+    "server_vep_verify": 576,
+    "intersection": 905,
+    "pre_protocol": 20,
+    "full_protocol": 3364
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -186,13 +160,13 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 619,
-    "user_vep_verify": 503,
-    "server_vep_prove": 626,
-    "server_vep_verify": 507,
-    "intersection": 944,
-    "pre_protocol": 21,
-    "full_protocol": 3209
+    "user_vep_prove": 649,
+    "user_vep_verify": 575,
+    "server_vep_prove": 666,
+    "server_vep_verify": 573,
+    "intersection": 907,
+    "pre_protocol": 19,
+    "full_protocol": 3381
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -212,13 +186,13 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 596,
-    "user_vep_verify": 502,
-    "server_vep_prove": 589,
-    "server_vep_verify": 503,
-    "intersection": 948,
-    "pre_protocol": 22,
-    "full_protocol": 3148
+    "user_vep_prove": 645,
+    "user_vep_verify": 563,
+    "server_vep_prove": 664,
+    "server_vep_verify": 573,
+    "intersection": 927,
+    "pre_protocol": 19,
+    "full_protocol": 3383
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -238,13 +212,39 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 604,
-    "user_vep_verify": 501,
-    "server_vep_prove": 609,
-    "server_vep_verify": 503,
-    "intersection": 916,
-    "pre_protocol": 23,
-    "full_protocol": 3143
+    "user_vep_prove": 657,
+    "user_vep_verify": 557,
+    "server_vep_prove": 649,
+    "server_vep_verify": 570,
+    "intersection": 931,
+    "pre_protocol": 19,
+    "full_protocol": 3375
+  },
+  "bandwidth": {
+    "ve_statement": 2560,
+    "ve_proof": 96,
+    "user_vep_input": 1600,
+    "user_vep_statement": 1600,
+    "user_vep_proof": 665632,
+    "server_vep_input": 1600,
+    "server_vep_statement": 1600,
+    "server_vep_proof": 665632,
+    "ballots": 1280,
+    "full_protocol": 1343744
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 2,
+    "ve_verify": 3,
+    "user_vep_prove": 626,
+    "user_vep_verify": 553,
+    "server_vep_prove": 632,
+    "server_vep_verify": 567,
+    "intersection": 905,
+    "pre_protocol": 20,
+    "full_protocol": 3293
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -266,13 +266,13 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 1199,
-    "user_vep_verify": 1019,
-    "server_vep_prove": 1176,
-    "server_vep_verify": 1035,
-    "intersection": 1834,
-    "pre_protocol": 37,
-    "full_protocol": 6276
+    "user_vep_prove": 1377,
+    "user_vep_verify": 1131,
+    "server_vep_prove": 1329,
+    "server_vep_verify": 1158,
+    "intersection": 1811,
+    "pre_protocol": 34,
+    "full_protocol": 6819
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -292,13 +292,13 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 1192,
-    "user_vep_verify": 1016,
-    "server_vep_prove": 1217,
-    "server_vep_verify": 1005,
-    "intersection": 1866,
-    "pre_protocol": 42,
-    "full_protocol": 6307
+    "user_vep_prove": 1279,
+    "user_vep_verify": 1113,
+    "server_vep_prove": 1290,
+    "server_vep_verify": 1165,
+    "intersection": 1847,
+    "pre_protocol": 72,
+    "full_protocol": 6707
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -318,13 +318,13 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 1205,
-    "user_vep_verify": 1102,
-    "server_vep_prove": 1212,
-    "server_vep_verify": 1017,
-    "intersection": 1856,
-    "pre_protocol": 45,
-    "full_protocol": 6409
+    "user_vep_prove": 1269,
+    "user_vep_verify": 1105,
+    "server_vep_prove": 1268,
+    "server_vep_verify": 1145,
+    "intersection": 1816,
+    "pre_protocol": 34,
+    "full_protocol": 6616
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -344,13 +344,13 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 1180,
-    "user_vep_verify": 1024,
-    "server_vep_prove": 1240,
-    "server_vep_verify": 2160,
-    "intersection": 1930,
-    "pre_protocol": 37,
-    "full_protocol": 7551
+    "user_vep_prove": 1269,
+    "user_vep_verify": 1104,
+    "server_vep_prove": 1269,
+    "server_vep_verify": 1107,
+    "intersection": 1822,
+    "pre_protocol": 35,
+    "full_protocol": 6583
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -370,13 +370,13 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 1205,
-    "user_vep_verify": 1018,
-    "server_vep_prove": 1219,
-    "server_vep_verify": 1011,
-    "intersection": 1837,
-    "pre_protocol": 40,
-    "full_protocol": 6304
+    "user_vep_prove": 1285,
+    "user_vep_verify": 1114,
+    "server_vep_prove": 1286,
+    "server_vep_verify": 1107,
+    "intersection": 1822,
+    "pre_protocol": 34,
+    "full_protocol": 6626
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -396,13 +396,13 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 1203,
-    "user_vep_verify": 1021,
-    "server_vep_prove": 1183,
-    "server_vep_verify": 1015,
-    "intersection": 1952,
-    "pre_protocol": 38,
-    "full_protocol": 6385
+    "user_vep_prove": 1265,
+    "user_vep_verify": 1110,
+    "server_vep_prove": 1286,
+    "server_vep_verify": 1112,
+    "intersection": 1809,
+    "pre_protocol": 34,
+    "full_protocol": 6593
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -422,13 +422,13 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 1207,
-    "user_vep_verify": 1020,
-    "server_vep_prove": 1188,
-    "server_vep_verify": 1015,
-    "intersection": 1829,
+    "user_vep_prove": 1295,
+    "user_vep_verify": 1112,
+    "server_vep_prove": 1289,
+    "server_vep_verify": 1109,
+    "intersection": 1800,
     "pre_protocol": 39,
-    "full_protocol": 6271
+    "full_protocol": 6618
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -448,13 +448,13 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 1156,
-    "user_vep_verify": 1030,
-    "server_vep_prove": 1194,
-    "server_vep_verify": 1006,
-    "intersection": 1834,
-    "pre_protocol": 39,
-    "full_protocol": 6231
+    "user_vep_prove": 1270,
+    "user_vep_verify": 1106,
+    "server_vep_prove": 1290,
+    "server_vep_verify": 1106,
+    "intersection": 1823,
+    "pre_protocol": 34,
+    "full_protocol": 6607
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -474,13 +474,13 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 1175,
-    "user_vep_verify": 1019,
-    "server_vep_prove": 1183,
-    "server_vep_verify": 1004,
-    "intersection": 1836,
-    "pre_protocol": 37,
-    "full_protocol": 6230
+    "user_vep_prove": 1268,
+    "user_vep_verify": 1103,
+    "server_vep_prove": 1263,
+    "server_vep_verify": 1101,
+    "intersection": 1801,
+    "pre_protocol": 34,
+    "full_protocol": 6547
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -500,13 +500,13 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 1176,
-    "user_vep_verify": 1017,
-    "server_vep_prove": 1146,
-    "server_vep_verify": 1007,
-    "intersection": 1829,
-    "pre_protocol": 37,
-    "full_protocol": 6189
+    "user_vep_prove": 1296,
+    "user_vep_verify": 1111,
+    "server_vep_prove": 1306,
+    "server_vep_verify": 1113,
+    "intersection": 1812,
+    "pre_protocol": 34,
+    "full_protocol": 6651
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -528,168 +528,12 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 2375,
-    "user_vep_verify": 2013,
-    "server_vep_prove": 2372,
-    "server_vep_verify": 2012,
-    "intersection": 3672,
-    "pre_protocol": 67,
-    "full_protocol": 12461
-  },
-  "bandwidth": {
-    "ve_statement": 2560,
-    "ve_proof": 96,
-    "user_vep_input": 6400,
-    "user_vep_statement": 6400,
-    "user_vep_proof": 2662432,
-    "server_vep_input": 6400,
-    "server_vep_statement": 6400,
-    "server_vep_proof": 2662432,
-    "ballots": 1280,
-    "full_protocol": 5361344
-  }
-  }
-,
-  {
-  "runtime": {
-    "ve_prove": 2,
-    "ve_verify": 3,
-    "user_vep_prove": 2351,
-    "user_vep_verify": 2274,
-    "server_vep_prove": 2417,
-    "server_vep_verify": 2017,
-    "intersection": 3689,
-    "pre_protocol": 140,
-    "full_protocol": 12764
-  },
-  "bandwidth": {
-    "ve_statement": 2560,
-    "ve_proof": 96,
-    "user_vep_input": 6400,
-    "user_vep_statement": 6400,
-    "user_vep_proof": 2662432,
-    "server_vep_input": 6400,
-    "server_vep_statement": 6400,
-    "server_vep_proof": 2662432,
-    "ballots": 1280,
-    "full_protocol": 5361344
-  }
-  }
-,
-  {
-  "runtime": {
-    "ve_prove": 2,
-    "ve_verify": 3,
-    "user_vep_prove": 2474,
-    "user_vep_verify": 2083,
-    "server_vep_prove": 2369,
-    "server_vep_verify": 2253,
-    "intersection": 3746,
-    "pre_protocol": 74,
-    "full_protocol": 12940
-  },
-  "bandwidth": {
-    "ve_statement": 2560,
-    "ve_proof": 96,
-    "user_vep_input": 6400,
-    "user_vep_statement": 6400,
-    "user_vep_proof": 2662432,
-    "server_vep_input": 6400,
-    "server_vep_statement": 6400,
-    "server_vep_proof": 2662432,
-    "ballots": 1280,
-    "full_protocol": 5361344
-  }
-  }
-,
-  {
-  "runtime": {
-    "ve_prove": 2,
-    "ve_verify": 3,
-    "user_vep_prove": 2429,
-    "user_vep_verify": 2011,
-    "server_vep_prove": 2444,
-    "server_vep_verify": 2021,
-    "intersection": 3658,
-    "pre_protocol": 84,
-    "full_protocol": 12578
-  },
-  "bandwidth": {
-    "ve_statement": 2560,
-    "ve_proof": 96,
-    "user_vep_input": 6400,
-    "user_vep_statement": 6400,
-    "user_vep_proof": 2662432,
-    "server_vep_input": 6400,
-    "server_vep_statement": 6400,
-    "server_vep_proof": 2662432,
-    "ballots": 1280,
-    "full_protocol": 5361344
-  }
-  }
-,
-  {
-  "runtime": {
-    "ve_prove": 2,
-    "ve_verify": 3,
-    "user_vep_prove": 2413,
-    "user_vep_verify": 2015,
-    "server_vep_prove": 2421,
-    "server_vep_verify": 2009,
-    "intersection": 3670,
-    "pre_protocol": 70,
-    "full_protocol": 12544
-  },
-  "bandwidth": {
-    "ve_statement": 2560,
-    "ve_proof": 96,
-    "user_vep_input": 6400,
-    "user_vep_statement": 6400,
-    "user_vep_proof": 2662432,
-    "server_vep_input": 6400,
-    "server_vep_statement": 6400,
-    "server_vep_proof": 2662432,
-    "ballots": 1280,
-    "full_protocol": 5361344
-  }
-  }
-,
-  {
-  "runtime": {
-    "ve_prove": 2,
-    "ve_verify": 3,
-    "user_vep_prove": 2392,
-    "user_vep_verify": 2014,
-    "server_vep_prove": 2328,
-    "server_vep_verify": 2014,
-    "intersection": 3704,
-    "pre_protocol": 71,
-    "full_protocol": 12468
-  },
-  "bandwidth": {
-    "ve_statement": 2560,
-    "ve_proof": 96,
-    "user_vep_input": 6400,
-    "user_vep_statement": 6400,
-    "user_vep_proof": 2662432,
-    "server_vep_input": 6400,
-    "server_vep_statement": 6400,
-    "server_vep_proof": 2662432,
-    "ballots": 1280,
-    "full_protocol": 5361344
-  }
-  }
-,
-  {
-  "runtime": {
-    "ve_prove": 2,
-    "ve_verify": 3,
-    "user_vep_prove": 2445,
-    "user_vep_verify": 2076,
-    "server_vep_prove": 2530,
-    "server_vep_verify": 2339,
-    "intersection": 3751,
-    "pre_protocol": 69,
+    "user_vep_prove": 2543,
+    "user_vep_verify": 2213,
+    "server_vep_prove": 2555,
+    "server_vep_verify": 2224,
+    "intersection": 3606,
+    "pre_protocol": 62,
     "full_protocol": 13157
   },
   "bandwidth": {
@@ -710,13 +554,13 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 2420,
-    "user_vep_verify": 2096,
-    "server_vep_prove": 2388,
-    "server_vep_verify": 2149,
-    "intersection": 3697,
-    "pre_protocol": 68,
-    "full_protocol": 12765
+    "user_vep_prove": 2598,
+    "user_vep_verify": 2252,
+    "server_vep_prove": 2547,
+    "server_vep_verify": 2220,
+    "intersection": 3695,
+    "pre_protocol": 64,
+    "full_protocol": 13329
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -736,13 +580,13 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 2341,
-    "user_vep_verify": 2025,
-    "server_vep_prove": 2507,
-    "server_vep_verify": 2013,
-    "intersection": 3691,
-    "pre_protocol": 66,
-    "full_protocol": 12592
+    "user_vep_prove": 2498,
+    "user_vep_verify": 2203,
+    "server_vep_prove": 2650,
+    "server_vep_verify": 2217,
+    "intersection": 3603,
+    "pre_protocol": 82,
+    "full_protocol": 13186
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -762,13 +606,169 @@
   "runtime": {
     "ve_prove": 2,
     "ve_verify": 3,
-    "user_vep_prove": 2408,
-    "user_vep_verify": 2024,
-    "server_vep_prove": 2357,
-    "server_vep_verify": 2018,
-    "intersection": 3677,
-    "pre_protocol": 67,
-    "full_protocol": 12499
+    "user_vep_prove": 2556,
+    "user_vep_verify": 2244,
+    "server_vep_prove": 2583,
+    "server_vep_verify": 2268,
+    "intersection": 3664,
+    "pre_protocol": 79,
+    "full_protocol": 13330
+  },
+  "bandwidth": {
+    "ve_statement": 2560,
+    "ve_proof": 96,
+    "user_vep_input": 6400,
+    "user_vep_statement": 6400,
+    "user_vep_proof": 2662432,
+    "server_vep_input": 6400,
+    "server_vep_statement": 6400,
+    "server_vep_proof": 2662432,
+    "ballots": 1280,
+    "full_protocol": 5361344
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 2,
+    "ve_verify": 3,
+    "user_vep_prove": 2551,
+    "user_vep_verify": 2259,
+    "server_vep_prove": 2607,
+    "server_vep_verify": 2253,
+    "intersection": 3716,
+    "pre_protocol": 89,
+    "full_protocol": 13402
+  },
+  "bandwidth": {
+    "ve_statement": 2560,
+    "ve_proof": 96,
+    "user_vep_input": 6400,
+    "user_vep_statement": 6400,
+    "user_vep_proof": 2662432,
+    "server_vep_input": 6400,
+    "server_vep_statement": 6400,
+    "server_vep_proof": 2662432,
+    "ballots": 1280,
+    "full_protocol": 5361344
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 2,
+    "ve_verify": 3,
+    "user_vep_prove": 2587,
+    "user_vep_verify": 2273,
+    "server_vep_prove": 2519,
+    "server_vep_verify": 2291,
+    "intersection": 3687,
+    "pre_protocol": 64,
+    "full_protocol": 13373
+  },
+  "bandwidth": {
+    "ve_statement": 2560,
+    "ve_proof": 96,
+    "user_vep_input": 6400,
+    "user_vep_statement": 6400,
+    "user_vep_proof": 2662432,
+    "server_vep_input": 6400,
+    "server_vep_statement": 6400,
+    "server_vep_proof": 2662432,
+    "ballots": 1280,
+    "full_protocol": 5361344
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 2,
+    "ve_verify": 3,
+    "user_vep_prove": 2625,
+    "user_vep_verify": 2243,
+    "server_vep_prove": 2588,
+    "server_vep_verify": 2246,
+    "intersection": 3674,
+    "pre_protocol": 63,
+    "full_protocol": 13391
+  },
+  "bandwidth": {
+    "ve_statement": 2560,
+    "ve_proof": 96,
+    "user_vep_input": 6400,
+    "user_vep_statement": 6400,
+    "user_vep_proof": 2662432,
+    "server_vep_input": 6400,
+    "server_vep_statement": 6400,
+    "server_vep_proof": 2662432,
+    "ballots": 1280,
+    "full_protocol": 5361344
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 2,
+    "ve_verify": 3,
+    "user_vep_prove": 2630,
+    "user_vep_verify": 2249,
+    "server_vep_prove": 2602,
+    "server_vep_verify": 2223,
+    "intersection": 3801,
+    "pre_protocol": 64,
+    "full_protocol": 13521
+  },
+  "bandwidth": {
+    "ve_statement": 2560,
+    "ve_proof": 96,
+    "user_vep_input": 6400,
+    "user_vep_statement": 6400,
+    "user_vep_proof": 2662432,
+    "server_vep_input": 6400,
+    "server_vep_statement": 6400,
+    "server_vep_proof": 2662432,
+    "ballots": 1280,
+    "full_protocol": 5361344
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 2,
+    "ve_verify": 3,
+    "user_vep_prove": 2618,
+    "user_vep_verify": 2250,
+    "server_vep_prove": 2611,
+    "server_vep_verify": 2225,
+    "intersection": 3669,
+    "pre_protocol": 95,
+    "full_protocol": 13389
+  },
+  "bandwidth": {
+    "ve_statement": 2560,
+    "ve_proof": 96,
+    "user_vep_input": 6400,
+    "user_vep_statement": 6400,
+    "user_vep_proof": 2662432,
+    "server_vep_input": 6400,
+    "server_vep_statement": 6400,
+    "server_vep_proof": 2662432,
+    "ballots": 1280,
+    "full_protocol": 5361344
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 2,
+    "ve_verify": 3,
+    "user_vep_prove": 2557,
+    "user_vep_verify": 2211,
+    "server_vep_prove": 2577,
+    "server_vep_verify": 2252,
+    "intersection": 3603,
+    "pre_protocol": 64,
+    "full_protocol": 13216
   },
   "bandwidth": {
     "ve_statement": 2560,
@@ -790,13 +790,13 @@
   "runtime": {
     "ve_prove": 5,
     "ve_verify": 6,
-    "user_vep_prove": 2460,
-    "user_vep_verify": 2066,
-    "server_vep_prove": 2385,
-    "server_vep_verify": 2050,
-    "intersection": 7408,
-    "pre_protocol": 73,
-    "full_protocol": 16392
+    "user_vep_prove": 2541,
+    "user_vep_verify": 2242,
+    "server_vep_prove": 2622,
+    "server_vep_verify": 2251,
+    "intersection": 7395,
+    "pre_protocol": 95,
+    "full_protocol": 17072
   },
   "bandwidth": {
     "ve_statement": 5120,
@@ -816,13 +816,13 @@
   "runtime": {
     "ve_prove": 5,
     "ve_verify": 6,
-    "user_vep_prove": 2439,
-    "user_vep_verify": 2063,
-    "server_vep_prove": 2433,
-    "server_vep_verify": 2055,
-    "intersection": 7524,
-    "pre_protocol": 75,
-    "full_protocol": 16538
+    "user_vep_prove": 2597,
+    "user_vep_verify": 2228,
+    "server_vep_prove": 2553,
+    "server_vep_verify": 2273,
+    "intersection": 7273,
+    "pre_protocol": 70,
+    "full_protocol": 16948
   },
   "bandwidth": {
     "ve_statement": 5120,
@@ -842,13 +842,13 @@
   "runtime": {
     "ve_prove": 5,
     "ve_verify": 6,
-    "user_vep_prove": 2455,
-    "user_vep_verify": 2015,
-    "server_vep_prove": 2410,
-    "server_vep_verify": 2012,
-    "intersection": 7457,
-    "pre_protocol": 74,
-    "full_protocol": 16371
+    "user_vep_prove": 2571,
+    "user_vep_verify": 2221,
+    "server_vep_prove": 2570,
+    "server_vep_verify": 2237,
+    "intersection": 7299,
+    "pre_protocol": 68,
+    "full_protocol": 16920
   },
   "bandwidth": {
     "ve_statement": 5120,
@@ -868,13 +868,13 @@
   "runtime": {
     "ve_prove": 5,
     "ve_verify": 6,
-    "user_vep_prove": 2519,
-    "user_vep_verify": 2115,
-    "server_vep_prove": 2414,
-    "server_vep_verify": 2086,
-    "intersection": 7383,
-    "pre_protocol": 78,
-    "full_protocol": 16540
+    "user_vep_prove": 2559,
+    "user_vep_verify": 2227,
+    "server_vep_prove": 2548,
+    "server_vep_verify": 2253,
+    "intersection": 7413,
+    "pre_protocol": 68,
+    "full_protocol": 17020
   },
   "bandwidth": {
     "ve_statement": 5120,
@@ -894,13 +894,65 @@
   "runtime": {
     "ve_prove": 5,
     "ve_verify": 6,
-    "user_vep_prove": 2471,
-    "user_vep_verify": 2017,
-    "server_vep_prove": 2378,
-    "server_vep_verify": 2122,
+    "user_vep_prove": 2590,
+    "user_vep_verify": 2267,
+    "server_vep_prove": 2590,
+    "server_vep_verify": 2252,
+    "intersection": 7328,
+    "pre_protocol": 68,
+    "full_protocol": 17048
+  },
+  "bandwidth": {
+    "ve_statement": 5120,
+    "ve_proof": 96,
+    "user_vep_input": 6400,
+    "user_vep_statement": 6400,
+    "user_vep_proof": 2662432,
+    "server_vep_input": 6400,
+    "server_vep_statement": 6400,
+    "server_vep_proof": 2662432,
+    "ballots": 2560,
+    "full_protocol": 5365184
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 5,
+    "ve_verify": 6,
+    "user_vep_prove": 2608,
+    "user_vep_verify": 2247,
+    "server_vep_prove": 2569,
+    "server_vep_verify": 2220,
+    "intersection": 7302,
+    "pre_protocol": 90,
+    "full_protocol": 16968
+  },
+  "bandwidth": {
+    "ve_statement": 5120,
+    "ve_proof": 96,
+    "user_vep_input": 6400,
+    "user_vep_statement": 6400,
+    "user_vep_proof": 2662432,
+    "server_vep_input": 6400,
+    "server_vep_statement": 6400,
+    "server_vep_proof": 2662432,
+    "ballots": 2560,
+    "full_protocol": 5365184
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 5,
+    "ve_verify": 6,
+    "user_vep_prove": 2642,
+    "user_vep_verify": 2238,
+    "server_vep_prove": 2627,
+    "server_vep_verify": 2292,
     "intersection": 7337,
-    "pre_protocol": 76,
-    "full_protocol": 16349
+    "pre_protocol": 94,
+    "full_protocol": 17158
   },
   "bandwidth": {
     "ve_statement": 5120,
@@ -920,39 +972,13 @@
   "runtime": {
     "ve_prove": 5,
     "ve_verify": 6,
-    "user_vep_prove": 2522,
-    "user_vep_verify": 2022,
-    "server_vep_prove": 2386,
-    "server_vep_verify": 2021,
-    "intersection": 7457,
-    "pre_protocol": 72,
-    "full_protocol": 16431
-  },
-  "bandwidth": {
-    "ve_statement": 5120,
-    "ve_proof": 96,
-    "user_vep_input": 6400,
-    "user_vep_statement": 6400,
-    "user_vep_proof": 2662432,
-    "server_vep_input": 6400,
-    "server_vep_statement": 6400,
-    "server_vep_proof": 2662432,
-    "ballots": 2560,
-    "full_protocol": 5365184
-  }
-  }
-,
-  {
-  "runtime": {
-    "ve_prove": 5,
-    "ve_verify": 6,
-    "user_vep_prove": 2402,
-    "user_vep_verify": 2021,
-    "server_vep_prove": 2413,
-    "server_vep_verify": 2002,
-    "intersection": 7721,
+    "user_vep_prove": 2540,
+    "user_vep_verify": 2208,
+    "server_vep_prove": 2567,
+    "server_vep_verify": 2225,
+    "intersection": 7383,
     "pre_protocol": 92,
-    "full_protocol": 16581
+    "full_protocol": 16945
   },
   "bandwidth": {
     "ve_statement": 5120,
@@ -972,13 +998,13 @@
   "runtime": {
     "ve_prove": 5,
     "ve_verify": 6,
-    "user_vep_prove": 2341,
-    "user_vep_verify": 2008,
-    "server_vep_prove": 2271,
-    "server_vep_verify": 2017,
-    "intersection": 7397,
-    "pre_protocol": 107,
-    "full_protocol": 16055
+    "user_vep_prove": 2552,
+    "user_vep_verify": 2215,
+    "server_vep_prove": 2547,
+    "server_vep_verify": 2212,
+    "intersection": 7361,
+    "pre_protocol": 72,
+    "full_protocol": 16907
   },
   "bandwidth": {
     "ve_statement": 5120,
@@ -998,13 +1024,13 @@
   "runtime": {
     "ve_prove": 5,
     "ve_verify": 6,
-    "user_vep_prove": 2358,
-    "user_vep_verify": 2008,
-    "server_vep_prove": 2491,
-    "server_vep_verify": 2030,
-    "intersection": 7245,
-    "pre_protocol": 104,
-    "full_protocol": 16154
+    "user_vep_prove": 2581,
+    "user_vep_verify": 2256,
+    "server_vep_prove": 2664,
+    "server_vep_verify": 2273,
+    "intersection": 7363,
+    "pre_protocol": 121,
+    "full_protocol": 17160
   },
   "bandwidth": {
     "ve_statement": 5120,
@@ -1017,6 +1043,296 @@
     "server_vep_proof": 2662432,
     "ballots": 2560,
     "full_protocol": 5365184
+  }
+  }
+]
+,
+"500_40_10": [
+  {
+  "runtime": {
+    "ve_prove": 2,
+    "ve_verify": 3,
+    "user_vep_prove": 6388,
+    "user_vep_verify": 5534,
+    "server_vep_prove": 6507,
+    "server_vep_verify": 5635,
+    "intersection": 9176,
+    "pre_protocol": 153,
+    "full_protocol": 33266
+  },
+  "bandwidth": {
+    "ve_statement": 2560,
+    "ve_proof": 96,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
+    "ballots": 1280,
+    "full_protocol": 13396544
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 2,
+    "ve_verify": 3,
+    "user_vep_prove": 6409,
+    "user_vep_verify": 5554,
+    "server_vep_prove": 6416,
+    "server_vep_verify": 5573,
+    "intersection": 9073,
+    "pre_protocol": 151,
+    "full_protocol": 33052
+  },
+  "bandwidth": {
+    "ve_statement": 2560,
+    "ve_proof": 96,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
+    "ballots": 1280,
+    "full_protocol": 13396544
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 2,
+    "ve_verify": 3,
+    "user_vep_prove": 6434,
+    "user_vep_verify": 5589,
+    "server_vep_prove": 6480,
+    "server_vep_verify": 5555,
+    "intersection": 9161,
+    "pre_protocol": 170,
+    "full_protocol": 33245
+  },
+  "bandwidth": {
+    "ve_statement": 2560,
+    "ve_proof": 96,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
+    "ballots": 1280,
+    "full_protocol": 13396544
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 2,
+    "ve_verify": 3,
+    "user_vep_prove": 6392,
+    "user_vep_verify": 5577,
+    "server_vep_prove": 6350,
+    "server_vep_verify": 5547,
+    "intersection": 9145,
+    "pre_protocol": 161,
+    "full_protocol": 33037
+  },
+  "bandwidth": {
+    "ve_statement": 2560,
+    "ve_proof": 96,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
+    "ballots": 1280,
+    "full_protocol": 13396544
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 2,
+    "ve_verify": 3,
+    "user_vep_prove": 6518,
+    "user_vep_verify": 5628,
+    "server_vep_prove": 6375,
+    "server_vep_verify": 5597,
+    "intersection": 9134,
+    "pre_protocol": 176,
+    "full_protocol": 33277
+  },
+  "bandwidth": {
+    "ve_statement": 2560,
+    "ve_proof": 96,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
+    "ballots": 1280,
+    "full_protocol": 13396544
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 2,
+    "ve_verify": 3,
+    "user_vep_prove": 6472,
+    "user_vep_verify": 5565,
+    "server_vep_prove": 6363,
+    "server_vep_verify": 5533,
+    "intersection": 9124,
+    "pre_protocol": 216,
+    "full_protocol": 33082
+  },
+  "bandwidth": {
+    "ve_statement": 2560,
+    "ve_proof": 96,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
+    "ballots": 1280,
+    "full_protocol": 13396544
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 2,
+    "ve_verify": 3,
+    "user_vep_prove": 6367,
+    "user_vep_verify": 5612,
+    "server_vep_prove": 6548,
+    "server_vep_verify": 5595,
+    "intersection": 9186,
+    "pre_protocol": 154,
+    "full_protocol": 33335
+  },
+  "bandwidth": {
+    "ve_statement": 2560,
+    "ve_proof": 96,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
+    "ballots": 1280,
+    "full_protocol": 13396544
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 3,
+    "ve_verify": 3,
+    "user_vep_prove": 6426,
+    "user_vep_verify": 5590,
+    "server_vep_prove": 6535,
+    "server_vep_verify": 5547,
+    "intersection": 9051,
+    "pre_protocol": 172,
+    "full_protocol": 33176
+  },
+  "bandwidth": {
+    "ve_statement": 2560,
+    "ve_proof": 96,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
+    "ballots": 1280,
+    "full_protocol": 13396544
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 2,
+    "ve_verify": 3,
+    "user_vep_prove": 6414,
+    "user_vep_verify": 5593,
+    "server_vep_prove": 6284,
+    "server_vep_verify": 5578,
+    "intersection": 9096,
+    "pre_protocol": 153,
+    "full_protocol": 32990
+  },
+  "bandwidth": {
+    "ve_statement": 2560,
+    "ve_proof": 96,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
+    "ballots": 1280,
+    "full_protocol": 13396544
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 2,
+    "ve_verify": 3,
+    "user_vep_prove": 6469,
+    "user_vep_verify": 5546,
+    "server_vep_prove": 6451,
+    "server_vep_verify": 5544,
+    "intersection": 9087,
+    "pre_protocol": 153,
+    "full_protocol": 33123
+  },
+  "bandwidth": {
+    "ve_statement": 2560,
+    "ve_proof": 96,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
+    "ballots": 1280,
+    "full_protocol": 13396544
+  }
+  }
+]
+,
+"500_80_10": [
+  {
+  "runtime": {
+    "ve_prove": 5,
+    "ve_verify": 7,
+    "user_vep_prove": 6368,
+    "user_vep_verify": 5589,
+    "server_vep_prove": 6506,
+    "server_vep_verify": 5654,
+    "intersection": 18233,
+    "pre_protocol": 161,
+    "full_protocol": 42383
+  },
+  "bandwidth": {
+    "ve_statement": 5120,
+    "ve_proof": 96,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
+    "ballots": 2560,
+    "full_protocol": 13400384
   }
   }
 ,
@@ -1024,25 +1340,233 @@
   "runtime": {
     "ve_prove": 5,
     "ve_verify": 6,
-    "user_vep_prove": 2305,
-    "user_vep_verify": 1997,
-    "server_vep_prove": 2290,
-    "server_vep_verify": 1986,
-    "intersection": 7203,
-    "pre_protocol": 87,
-    "full_protocol": 15802
+    "user_vep_prove": 6559,
+    "user_vep_verify": 5524,
+    "server_vep_prove": 6392,
+    "server_vep_verify": 5547,
+    "intersection": 18211,
+    "pre_protocol": 196,
+    "full_protocol": 42265
   },
   "bandwidth": {
     "ve_statement": 5120,
     "ve_proof": 96,
-    "user_vep_input": 6400,
-    "user_vep_statement": 6400,
-    "user_vep_proof": 2662432,
-    "server_vep_input": 6400,
-    "server_vep_statement": 6400,
-    "server_vep_proof": 2662432,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
     "ballots": 2560,
-    "full_protocol": 5365184
+    "full_protocol": 13400384
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 5,
+    "ve_verify": 6,
+    "user_vep_prove": 6457,
+    "user_vep_verify": 5556,
+    "server_vep_prove": 6313,
+    "server_vep_verify": 5586,
+    "intersection": 18309,
+    "pre_protocol": 157,
+    "full_protocol": 42253
+  },
+  "bandwidth": {
+    "ve_statement": 5120,
+    "ve_proof": 96,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
+    "ballots": 2560,
+    "full_protocol": 13400384
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 5,
+    "ve_verify": 6,
+    "user_vep_prove": 6409,
+    "user_vep_verify": 5569,
+    "server_vep_prove": 6680,
+    "server_vep_verify": 5620,
+    "intersection": 18170,
+    "pre_protocol": 157,
+    "full_protocol": 42481
+  },
+  "bandwidth": {
+    "ve_statement": 5120,
+    "ve_proof": 96,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
+    "ballots": 2560,
+    "full_protocol": 13400384
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 5,
+    "ve_verify": 6,
+    "user_vep_prove": 6409,
+    "user_vep_verify": 5558,
+    "server_vep_prove": 6424,
+    "server_vep_verify": 5592,
+    "intersection": 18195,
+    "pre_protocol": 161,
+    "full_protocol": 42210
+  },
+  "bandwidth": {
+    "ve_statement": 5120,
+    "ve_proof": 96,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
+    "ballots": 2560,
+    "full_protocol": 13400384
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 5,
+    "ve_verify": 6,
+    "user_vep_prove": 6494,
+    "user_vep_verify": 5570,
+    "server_vep_prove": 6447,
+    "server_vep_verify": 5570,
+    "intersection": 18151,
+    "pre_protocol": 158,
+    "full_protocol": 42265
+  },
+  "bandwidth": {
+    "ve_statement": 5120,
+    "ve_proof": 96,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
+    "ballots": 2560,
+    "full_protocol": 13400384
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 5,
+    "ve_verify": 6,
+    "user_vep_prove": 6501,
+    "user_vep_verify": 5534,
+    "server_vep_prove": 6314,
+    "server_vep_verify": 5553,
+    "intersection": 18148,
+    "pre_protocol": 160,
+    "full_protocol": 42082
+  },
+  "bandwidth": {
+    "ve_statement": 5120,
+    "ve_proof": 96,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
+    "ballots": 2560,
+    "full_protocol": 13400384
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 5,
+    "ve_verify": 6,
+    "user_vep_prove": 6386,
+    "user_vep_verify": 5546,
+    "server_vep_prove": 6342,
+    "server_vep_verify": 5539,
+    "intersection": 18290,
+    "pre_protocol": 163,
+    "full_protocol": 42134
+  },
+  "bandwidth": {
+    "ve_statement": 5120,
+    "ve_proof": 96,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
+    "ballots": 2560,
+    "full_protocol": 13400384
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 5,
+    "ve_verify": 6,
+    "user_vep_prove": 6500,
+    "user_vep_verify": 5586,
+    "server_vep_prove": 6417,
+    "server_vep_verify": 5583,
+    "intersection": 18221,
+    "pre_protocol": 184,
+    "full_protocol": 42338
+  },
+  "bandwidth": {
+    "ve_statement": 5120,
+    "ve_proof": 96,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
+    "ballots": 2560,
+    "full_protocol": 13400384
+  }
+  }
+,
+  {
+  "runtime": {
+    "ve_prove": 5,
+    "ve_verify": 6,
+    "user_vep_prove": 6511,
+    "user_vep_verify": 5635,
+    "server_vep_prove": 6494,
+    "server_vep_verify": 5570,
+    "intersection": 18255,
+    "pre_protocol": 165,
+    "full_protocol": 42497
+  },
+  "bandwidth": {
+    "ve_statement": 5120,
+    "ve_proof": 96,
+    "user_vep_input": 16000,
+    "user_vep_statement": 16000,
+    "user_vep_proof": 6656032,
+    "server_vep_input": 16000,
+    "server_vep_statement": 16000,
+    "server_vep_proof": 6656032,
+    "ballots": 2560,
+    "full_protocol": 13400384
   }
   }
 ]

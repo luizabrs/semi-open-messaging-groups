@@ -38,7 +38,9 @@ int main(void)
     benchmarks(50, 40); std::cerr << "," << std::endl;
     benchmarks(100, 40); std::cerr << "," << std::endl;
     benchmarks(200, 40); std::cerr << "," << std::endl;
-    benchmarks(200, 80); std::cerr << std::endl;
+    benchmarks(200, 80); std::cerr << "," << std::endl;
+    benchmarks(500, 40); std::cerr << "," << std::endl;
+    benchmarks(500, 80); std::cerr << std::endl;
     std::cerr << "}" << std::endl;
 
     return 0;
@@ -98,6 +100,7 @@ void test_zk_proofs()
     test_FiatShamir_RepeatedShuffledDLEQ<SCDLEQSigmaProtocol, ShuffledSigmaProtocol<SCDLEQSigmaProtocol>>(128, 10);
     test_FiatShamir_RepeatedShuffledDLEQ<SCDLEQSigmaProtocol, ShuffledSigmaProtocol<SCDLEQSigmaProtocol>>(128, 100);
     test_FiatShamir_RepeatedShuffledDLEQ<SCDLEQSigmaProtocol, ShuffledSigmaProtocol<SCDLEQSigmaProtocol>>(128, 200);
+    test_FiatShamir_RepeatedShuffledDLEQ<SCDLEQSigmaProtocol, ShuffledSigmaProtocol<SCDLEQSigmaProtocol>>(128, 500);
 
     test_FiatShamir_RepeatedShuffledDLEQ<SCDLEQSigmaProtocol, ShuffledSigmaProtocol<SCDLEQSigmaProtocol>>(1, 10);
     test_FiatShamir_RepeatedShuffledDLEQ<SCDLEQSigmaProtocol, ShuffledSigmaProtocol<SCDLEQSigmaProtocol>>(32, 10);
@@ -105,6 +108,7 @@ void test_zk_proofs()
     test_FiatShamir_RepeatedShuffledDLEQ<SCDLEQSigmaProtocol, ShuffledSigmaProtocol<SCDLEQSigmaProtocol>>(128, 10);
     test_FiatShamir_RepeatedShuffledDLEQ<SCDLEQSigmaProtocol, ShuffledSigmaProtocol<SCDLEQSigmaProtocol>>(128, 100);
     test_FiatShamir_RepeatedShuffledDLEQ<SCDLEQSigmaProtocol, ShuffledSigmaProtocol<SCDLEQSigmaProtocol>>(128, 200);
+    test_FiatShamir_RepeatedShuffledDLEQ<SCDLEQSigmaProtocol, ShuffledSigmaProtocol<SCDLEQSigmaProtocol>>(128, 500);
 
     test_VEP<SCDLEQSigmaProtocol, ShuffledSigmaProtocol<SCDLEQSigmaProtocol>>(1, 10);
     test_VEP<SCDLEQSigmaProtocol, ShuffledSigmaProtocol<SCDLEQSigmaProtocol>>(32, 10);
@@ -112,6 +116,7 @@ void test_zk_proofs()
     test_VEP<SCDLEQSigmaProtocol, ShuffledSigmaProtocol<SCDLEQSigmaProtocol>>(128, 10);
     test_VEP<SCDLEQSigmaProtocol, ShuffledSigmaProtocol<SCDLEQSigmaProtocol>>(128, 100);
     test_VEP<SCDLEQSigmaProtocol, ShuffledSigmaProtocol<SCDLEQSigmaProtocol>>(128, 200);
+    test_VEP<SCDLEQSigmaProtocol, ShuffledSigmaProtocol<SCDLEQSigmaProtocol>>(128, 500);
 
     printf("All tests passed.\n");
 }

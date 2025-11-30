@@ -10,4 +10,5 @@ if [ -f "$CANARY" ]; then
 fi
 touch $CANARY
 $DOCKERCMD run -it \
+  -v $(pwd):/root/host \
   --name ${BASENAME}-container ${BASENAME}-image
