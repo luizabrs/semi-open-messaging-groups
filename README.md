@@ -45,7 +45,7 @@ DOCKER=docker bash run.sh
 ```
 and in the resulting shell run the commands from [Running benchmarks](#running-benchmarks).
 
-If using Podman, replace `DOCKER=docker` with `DOCKER=podma` when invoking the above commands.
+If using Podman, replace `DOCKER=docker` with `DOCKER=podman` when invoking the above commands.
 
 # Authors
 
