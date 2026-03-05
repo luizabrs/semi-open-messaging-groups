@@ -81,7 +81,7 @@ We do not require the use of any extra machine learning model or dataset.
 
 The overall estimated time depends on the hardware specifications of the machine, as well as the type of environment used (Docker or Local). 
 
-The execution of the benchmarks should take ~20 min (all the 10 runs for all benchmarks) and it uses ~34M of disk storage.
+Considering that the enviroment is all set and configured (either local or docker), the execution of the benchmarks should take ~20 min (all the 10 runs for all benchmarks) and it uses ~34M of disk storage.
 ## Environment (Required for all badges)
 
 We now describe the enviroment needs and setup commands, as well as link the main repository for further access.
