@@ -7,10 +7,6 @@
 
 #include "trivial_zkproof.hpp"
 
-/*
-Proof system for DLOG, cf. Figure 6
-*/
-
 // returns 0 if prove succeeded, -1 otherwise
 int TrivialProof::prove(
     const unsigned char (*witness),

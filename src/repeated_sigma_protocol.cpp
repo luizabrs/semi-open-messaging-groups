@@ -8,7 +8,7 @@
 #include "repeated_sigma_protocol.hpp"
 
 /*
-Shuffled Sigma protocol from a shuffled-compatible sigma protocol, cf. Fig 1 of 2021/588
+Repeated shuffled Sigma protocol from a shuffled-compatible sigma protocol, cf. Fig 1 of 2021/588
 Note: starting from relations (w1, (s11, s12)) ... (wn, (sn1, sn2)) and given a permutation pi
 we prove a new relation with witness    w_pi(1), ..., w_pi(n)  and statements  (s11, s_pi(1)2) ... (sn1, s_pi(n)2)
 meaning after shuffling the right-hand statements, we should shuffle the witnesses too!

@@ -1,4 +1,4 @@
-# Artifact Appendix (Required for all badges)
+# Artefact Appendix (Required for all badges)
 
 Paper title: **Practical Semi-Open Chat Groups for Secure Messaging Applications**
 
@@ -11,87 +11,86 @@ Requested Badge(s): **Reproduced**
 - **Year**: 2026
 - **URL** [ePrint 2025/469](https://eprint.iacr.org/2025/469)
 
-This repository is as source to reproduce the reults stated the paper. Our code provide a practical experiment for the protocols with different parameters, which serves as demonstration of the real-world viability of our system.
+This repository contains the source code for implementing our reputation protocol and the benchmarks reported in the paper, serving as a demonstration of the real-world viability of our system.
 
-We provide a full protocol run in `/src/protocol_run.cpp` which has identified the main functions described in Figure 9. This gathers the overall execution of Figures 1 to 5, as well as a modular implementation of the *VEP* protocol presented in Figure 8. We also have a full implementation of auxiliar functions inside`\src` that achieves a modular 
+We provide implementations of the VE and VEP protocols from Figure 8, and of the functions described in Figure 9. Finally, we provide a full protocol run in `/src/protocol_run.cpp`.
 
-The repository is organized as following:
+The repository is organised as follows:
 
 ```shell
 semi-open-messaging-groups/
-   ├── benchmark_tables.py #  Create table with benchmark results
-   ├── benchmarks.sh # Script to run benchmark and forward results to json
-   ├── build.sh # Script to build docker
-   ├── CMakeLists.txt # Project building recipe
-   ├── Dockefile # Docker building instructions
-   ├── install_libsodium.sh # Script for isntallling libsodium
-   ├── run.sh # Script to run docker
+   ├── benchmark_tables.py # Creates a table with benchmark results
+   ├── benchmarks.sh # Script to run benchmark and forward results to JSON
+   ├── build.sh # Script to build a Docker container to run experiments in
+   ├── CMakeLists.txt # CMake build script
+   ├── Dockefile # Dockerfile for the container
+   ├── install_libsodium.sh # Script for installing libsodium (used by Dockerfile)
+   ├── run.sh # Script to run the experiments
    ├── /src/ # Directory with source code
-
 ```
 
 The  main implementation is located at `./src/`: 
 ```shell
 /src/
    ├── main.cpp # Main execution for the benchmarks
-   ├── utilities.cpp # Some util functions
-   ├── trivial_zkproof.cpp # Proof system for DLOG, cf. Figure 6
-   ├── dlog.cpp # Proof system for DLOG, cf. Figure 6
-   ├── dlog_to_gen.cpp # Proof system for DLOG, cf. Figure 6
-   ├── dleq.cpp # Proof system for DLOG, cf. Figure 6
-   ├── batched_dleq.cpp # Proof system for DLOG, cf. Figure 6
-   ├── shuffle_compatible_dleq.cpp # Shuffle compatible Sigma protocol for DLEQ, cf. Def A.12
-   ├── fiat_shamir.cpp # Fiat Shamir proof system for a Sigma protocol, cf. Definition A.9
-   ├── base_point.cpp # Base points from ristretto
-   ├── verifiable_exponentiation.cpp # VE(P) functionality, cf. Figure 7
+   ├── utilities.cpp # Some utility functions
+   ├── trivial_zkproof.cpp # Test file for ZK proof interface
+   ├── dlog.cpp # Proof system for DLOG, cf. Figure 7
+   ├── dlog_to_gen.cpp # Proof system for DLOG, using the Ristretto canonical generator as base
+   ├── dleq.cpp # Proof system for DLEQ, cf. Figure 7
+   ├── batched_dleq.cpp # Batched proof system for DLEQ, akin to cf. Figure 7
+   ├── shuffle_compatible_dleq.cpp # Shuffle compatible Sigma protocol for DLEQ, App. A.5 of https://eprint.iacr.org/2021/588
+   ├── fiat_shamir.cpp # Fiat Shamir proof system for a Sigma protocol
+   ├── base_point.cpp # Ristretto canonical group generator
+   ├── verifiable_exponentiation.cpp # VE(P) functionality, cf. Figure 8
    ├── shuffled_sigma_protocol.cpp # Shuffled Sigma protocol from a shuffled-compatible sigma protocol, cf. Fig 1 of 2021/588 (https://eprint.iacr.org/2021/588)
    ├── random_permutation.cpp # Implementation for random_permutation
-   ├── repeated_sigma_protocol.cpp # Shuffled Sigma protocol from a shuffled-compatible sigma protocol, cf. Fig 1 of 2021/588 (https://eprint.iacr.org/2021/588)
-   ├── keccak.cpp # Implementation by the Keccak Team (https://keccak.team/)
+   ├── repeated_sigma_protocol.cpp # Repeated Shuffled Sigma protocol
+   ├── keccak.cpp # Public domain implementation of Keccak
    ├── protocol_run.cpp # Implementation of full protocol_run
-   ├── parties.cpp # Implementation of User and Server functions
+   ├── parties.cpp # Implementation of User and Server functions, c.f. Figure 9
 ```
 
 ### Security/Privacy Issues and Ethical Concerns  (Required for all badges)
 
-There are no Security/Privacy Issues and Ethical Concerns related to our code. Nonetheless, we stress that since this code provides a research prototype, using it in production is **not recommended**. 
+There are no Security/Privacy Issues and Ethical Concerns related to our code. Nonetheless, we stress that since this code provides a research prototype, using it in production is **discouraged**. 
 
 ## Basic Requirements (Required for Functional and Reproduced badges)
 
 ### Hardware Requirements  (Required for Functional and Reproduced badges)
 
-We do not activelly require any Hardware specifications, however, to obtain timings declared on the paper we use perform measurements on a Intel(R) Core(TM) Ultra 5 235U CPU on a single core.
+We do not require any specific hardware to run our code. Our measurements were performed on an Intel(R) Core(TM) Ultra 5 235U CPU on a single core.
 
 ### Software Requirements (Required for Functional and Reproduced badges)
 
 Our implementation is written in C++ and requires the following:
 - `cmake 3.14` for building
 - `clang-14` for compilation
-- `libsodium` for  *Ristretto* and *SHA2* implementations - more information can be found at https://github.com/jedisct1/libsodium
-- `XKCP` for SHAKE implementation from the “compact” FIPS202 code - more information can be found at https://github.com/XKCP/XKCP/blob/master/Standalone/CompactFIPS202/C/Keccak-readable-and-compact.c
+- `python3` for building a Latex table from the benchmark output.
 
+It also uses two external libraries:
+- `libsodium` for  *Ristretto* and *SHA2* implementations - more information can be found at https://github.com/jedisct1/libsodium. This is automatically fetched when building the docker container.
+- `XKCP` for the SHAKE implementation from the “compact” FIPS202 code - more information can be found at https://github.com/XKCP/XKCP/blob/master/Standalone/CompactFIPS202/C/Keccak-readable-and-compact.c. This is a public domain library and is shipped in our repository.
 
-Other than this, we require `python3`
+To execute the artefacts we support two settings, one for users with access to Debian 12.7 and another for users who may wish to run experiments on a Docker container based on Debian 12.7.
 
-To execute the artifacts we provide two settings, one for users that have access to Debian (Linux) and other for the users that may wish to run experiments on a Docker that runs Debian 12.7 in it. 
-
-We do not require the use of any extra machine learning model or dataset.
+We do not require the use of any machine learning model or dataset.
 
 ### Estimated Time and Storage Consumption (Required for Functional and Reproduced badges)
 
 The overall estimated time depends on the hardware specifications of the machine, as well as the type of environment used (Docker or Local). 
 
-Considering that the enviroment is all set and configured (either local or docker), the execution of the benchmarks should take ~20 min (all the 10 runs for all benchmarks) and it uses ~34M of disk storage.
+Considering that the environment is all set and configured, the execution of the benchmarks should take ~20 min (this includes the 10 repeated runs for all benchmarks) and it uses ~34M of disk storage.
+
 ## Environment (Required for all badges)
 
-We now describe the enviroment needs and setup commands, as well as link the main repository for further access.
+We now describe the environment needs and setup commands, as well as link the main repository for further access.
 
 ### Accessibility (Required for all badges)
 
 The implementation is found at this GitHub Repository: https://github.com/luizabrs/semi-open-messaging-groups/tree/main 
 
 ### Set up the environment (Required for Functional and Reproduced badges)
-
 
 ### 1. Running with Debian(Linux)
 
@@ -122,9 +121,9 @@ This will print the Latex source for the table in the paper.
 
 ### 2. Running with Docker
 
-For ease of reproducibility, we offer a Dockerfile generating the environment described above
+For ease of reproducibility, we offer a Dockerfile generating the environment described above.
 
-To build the environment run
+To build the environment, run
 ```bash
 DOCKER=docker bash build.sh
 ```
@@ -136,12 +135,11 @@ and in the resulting shell run the commands from [Running benchmarks](#11-runnin
 
 If using Podman, replace `DOCKER=docker` with `DOCKER=podman` when invoking the above commands.
 
-
 ### Expected run example
 
-By the time you configure everything and run the benchmarks you should get different runs that output 10 protocol runs for each benchmark.
+By the time you configure everything and run the benchmarks, you should see the output trace of 10 protocol runs.
 
-An **example** output for one protocol run in a tiny example such as `benchmarks(5, 4);`, where `group_size = 5` and `votes = 4`:
+An **example** output for one protocol run for a small example such as `benchmarks(5, 4);`, where `group_size = 5` and `votes = 4`, is as follows:
 
 ```
 .
@@ -206,42 +204,38 @@ deleting ballots for f0e77308c61edfe1cb9620ca6e49ac2ea80437f61b5a41693014a9646cf
 .
 ```
  
-## Artifact Evaluation  (Required for Functional and Reproduced badges)
+## Artefact Evaluation (Required for Functional and Reproduced badges)
 
 ### Main Results and Claims
 
-#### Main Result 1:
+#### Main Result:
 
-Our first result is having a practical implementation that verifies the practical viability of our protocol, we implemented the:
-   - DLog and DLEQ proof systems in Section 4.3
-   - The verifiable exponentiation protocols in Section 5
-   - and the base protocol from Section 6 (including all algorithms from Figure 9). 
+Our main result is an implementation that shows the practical viability of our protocol. 
+We implemented:
+- DLOG and DLEQ proof systems in Section 4.3,
+- the verifiable exponentiation protocols in Section 5,
+- the base protocol from Section 6 (including all algorithms from Figure 9). 
 
-This implementation is the only one available for the given modelling assumptions (more details in sec. 1.4 on the paper) 
+Our protocol scales up to 500 users, with a reasonable timing of 33s for `(users=500, votes=40)` and 42s for `(users=500, votes=80)`.
 
-#### Main Result 2: 
-
-From the literature, and as discussed on the paper, our benchmark is able to execute the protocol for up to 500 users, with a reasonable timing of 33s for `(n=500, t =40)` and 42s for `(n=500, t=80)`. This actually demonstrates a promising scalability of the protocol
-
-We also identtify that most group aperations are on the ballot intersection calculation, as it has a runtime of $\mathcal{O}(n.t.|D|)$. However, this can be amortized using parallelisation speedups, by processing loops across multiple threads.
+Our benchmarks confirm that most computing time is spent on the ballot intersection calculation, as it has a runtime of `O(users * votes * |vote domain|)`. In deployments, this could be amortised by trivially parallelising the loop.
 
 ### Experiments
 
-To obtain the results in the paper we used measured in a machine that runs a Intel(R) Core(TM) Ultra 5 235U CPU on a single core. 
+To obtain the results in the paper we used a machine that runs an Intel(R) Core(TM) Ultra 5 235U CPU on a single core. 
 
-Finally, running the commands in [Running benchmarks](#11-running-benchmarks), it returns a latex table containing the benchmarking numbers. We produced the following table presented in Sec.7, Table 1 on the paper. 
+Finally, running the commands in [Running benchmarks](#11-running-benchmarks), our code returns a Latex table containing the benchmarking numbers. These are the numbers reported in Sec. 7, Table 1 in the paper. 
 
 <p align="center">
   <img src="./Results.png" />
 </p>
 
-In the table, for each benchmark associated with the parameters `(n,t)`, where `n` is the number of users and `t` is the number of votes received by the external user wishing to joing the group. We take the average runtime and communication cost for 10 runs.
-
+In the table, for each benchmark associated with the parameters `(n,t)`, where `n` is the number of users and `t` is the number of votes received by the external user wishing to join the group. We take the average runtime and communication cost for 10 runs.
 
 ## Limitations  (Required for Functional and Reproduced badges)
 
-One of the limitations is that the current proof of concept implementation requires significant stack space for groups above 200. We enable this by usin the command `ulimit -s unlimited` to release the stack memory limit. 
+One of the limitations is that the current proof of concept implementation requires significant stack space for groups with more than 200 users. We enable this by using the command `ulimit -s unlimited` to release the stack memory limit. 
 
 ## Notes on Reusability (Encouraged for all badges)
 
-This implementation is a research prototype (i.e. proof of concept) that idealizes the system described on the paper, hence not idealized for a production code. We are aware that there are many possible optimizations and modifications throughout the code and we encourage the community to build upon this artifact, explore optimizations, replace individual components, and adapt the implementation to alternative settings, parameters, or application scenarios. 
+This implementation is a research prototype, not production code. Yet, we aimed to design C++ interfaces that are general (through templating) and that closely follow the formal syntax of sigma protocols and zero-knowledge proof systems. This means that it should be possible to apply optimisations and replace components in our design without a significant labour overhead for the community.

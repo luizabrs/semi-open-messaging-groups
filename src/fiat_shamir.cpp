@@ -10,7 +10,7 @@
 #include "keccak.hpp"
 
 /*
-Fiat Shamir proof system for a Sigma protocol, cf. Definition A.9
+Fiat Shamir proof system for a Sigma protocol
 */
 
 // returns 0 if prove succeeded, -1 otherwise

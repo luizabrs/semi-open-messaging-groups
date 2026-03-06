@@ -8,7 +8,7 @@
 #include "dlog.hpp"
 
 /*
-Proof system for DLOG, cf. Figure 6
+Proof system for DLOG, cf. Figure 7
 */
 
 // returns 0 if prove succeeded, -1 otherwise

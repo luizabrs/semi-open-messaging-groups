@@ -7,7 +7,7 @@
 #include "batched_dleq.hpp"
 
 /*
-Proof system for DLEQ, cf. Figure 6
+Proof system for Batched DLEQ
 */
 
 // returns 0 if prove succeeded, -1 otherwise

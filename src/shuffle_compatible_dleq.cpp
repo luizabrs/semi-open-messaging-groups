@@ -7,7 +7,7 @@
 #include "shuffle_compatible_dleq.hpp"
 
 /*
-Shuffle compatible Sigma protocol for DLEQ, cf. Def A.12
+Shuffle compatible Sigma protocol for DLEQ, App. A.5 of https://eprint.iacr.org/2021/588
 */
 
 // returns 0 if prove succeeded, -1 otherwise

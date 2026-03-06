@@ -11,7 +11,7 @@
 #include "random_permutation.hpp"
 
 /*
-VE(P) functionality, cf. Figure 7
+VE(P) functionality, cf. Figure 8
 */
 
 // returns 0 if prove succeeded, -1 otherwise

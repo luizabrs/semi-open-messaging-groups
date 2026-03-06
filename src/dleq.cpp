@@ -7,7 +7,7 @@
 #include "dleq.hpp"
 
 /*
-Proof system for DLEQ, cf. Figure 6
+Proof system for DLEQ, cf. Figure 7
 */
 
 // returns 0 if prove succeeded, -1 otherwise
