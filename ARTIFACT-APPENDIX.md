@@ -88,7 +88,7 @@ We now describe the environment needs and setup commands, as well as link the ma
 
 ### Accessibility (Required for all badges)
 
-The implementation is found at this GitHub Repository: https://github.com/luizabrs/semi-open-messaging-groups/tree/main 
+The implementation is found at this GitHub Repository: https://github.com/luizabrs/semi-open-messaging-groups
 
 ### Set up the environment (Required for Functional and Reproduced badges)
 
