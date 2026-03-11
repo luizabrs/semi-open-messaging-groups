@@ -109,6 +109,7 @@ cmake .
 make
 ulimit -s unlimited
 ./mr_impl 2>benchmarks.json
+mkdir host
 cp benchmarks.json host/benchmarks.json
 ```
 The resulting data can be found in `benchmarks.json`.
