@@ -1,10 +1,10 @@
-# Artefact Appendix (Required for all badges)
+# Artefact Appendix
 
 Paper title: **Practical Semi-Open Chat Groups for Secure Messaging Applications**
 
 Requested Badge(s): **Reproduced**
 
-## Description (Required for all badges)
+## Description
 
 - **Paper title**: Practical Semi-Open Chat Groups for Secure Messaging Applications
 - **Authors**: Alex Davidson, Luiza Soezima and Fernando Virdia
@@ -19,54 +19,68 @@ The repository is organised as follows:
 
 ```shell
 semi-open-messaging-groups/
-   ├── benchmark_tables.py # Creates a table with benchmark results
+   ├── ARTIFACT-APPENDIX.md # This file
+   ├── benchmark_table.py # Creates a table with benchmark results
    ├── benchmarks.sh # Script to run benchmark and forward results to JSON
    ├── build.sh # Script to build a Docker container to run experiments in
    ├── CMakeLists.txt # CMake build script
    ├── Dockefile # Dockerfile for the container
    ├── install_libsodium.sh # Script for installing libsodium (used by Dockerfile)
+   ├── LICENSE # Source code license
+   ├── README.md # Repository's README file
+   ├── Results.png # Screenshot of paper's table, for ease of comparison
    ├── run.sh # Script to run the experiments
-   ├── /src/ # Directory with source code
+   ├── paper-data/ # Directory containing the benchmarks reported in the paper
+   ├── src/ # Directory with protocol and benchmarking source code
 ```
 
-The  main implementation is located at `./src/`: 
+The  main implementation is located at `src/`: 
 ```shell
 /src/
+   ├── base_point.cpp, .hpp # Ristretto canonical group generator
+   ├── batched_dleq.cpp, .hpp # Batched proof system for DLEQ, akin to cf. Figure 7
+   ├── dleq.cpp, .hpp # Proof system for DLEQ, cf. Figure 7
+   ├── dlog_to_gen.cpp, .hpp # Proof system for DLOG, using the Ristretto canonical generator as base
+   ├── dlog.cpp, .hpp # Proof system for DLOG, cf. Figure 7
+   ├── fiat_shamir.cpp, .hpp # Fiat Shamir proof system for a Sigma protocol
+   ├── keccak.cpp, .hpp # Public domain implementation of Keccak
    ├── main.cpp # Main execution for the benchmarks
-   ├── utilities.cpp # Some utility functions
-   ├── trivial_zkproof.cpp # Test file for ZK proof interface
-   ├── dlog.cpp # Proof system for DLOG, cf. Figure 7
-   ├── dlog_to_gen.cpp # Proof system for DLOG, using the Ristretto canonical generator as base
-   ├── dleq.cpp # Proof system for DLEQ, cf. Figure 7
-   ├── batched_dleq.cpp # Batched proof system for DLEQ, akin to cf. Figure 7
-   ├── shuffle_compatible_dleq.cpp # Shuffle compatible Sigma protocol for DLEQ, App. A.5 of https://eprint.iacr.org/2021/588
-   ├── fiat_shamir.cpp # Fiat Shamir proof system for a Sigma protocol
-   ├── base_point.cpp # Ristretto canonical group generator
-   ├── verifiable_exponentiation.cpp # VE(P) functionality, cf. Figure 8
-   ├── shuffled_sigma_protocol.cpp # Shuffled Sigma protocol from a shuffled-compatible sigma protocol, cf. Fig 1 of 2021/588 (https://eprint.iacr.org/2021/588)
-   ├── random_permutation.cpp # Implementation for random_permutation
-   ├── repeated_sigma_protocol.cpp # Repeated Shuffled Sigma protocol
-   ├── keccak.cpp # Public domain implementation of Keccak
-   ├── protocol_run.cpp # Implementation of full protocol_run
-   ├── parties.cpp # Implementation of User and Server functions, c.f. Figure 9
+   ├── parties.cpp, .hpp # Implementation of User and Server functions, c.f. Figure 9
+   ├── protocol_run.cpp, .hpp # Implementation of a full protocol run
+   ├── random_permutation.cpp, .hpp # Implementation of function for randomly permuting a list of n indices
+   ├── repeated_sigma_protocol.cpp, .hpp # Repeated Shuffled Sigma protocol implementation
+   ├── shuffle_compatible_dleq.cpp, .hpp # Shuffle compatible Sigma protocol for DLEQ, App. A.5 of https://eprint.iacr.org/2021/588
+   ├── shuffled_sigma_protocol.cpp, .hpp # Shuffled Sigma protocol from a shuffled-compatible sigma protocol, cf. Fig 1 of 2021/588 (https://eprint.iacr.org/2021/588)
+   ├── sigma_protocol.hpp # Sigma protocol class interface
+   ├── test.cpp # Main function used for testing the environment
+   ├── trivial_zkproof.cpp, .hpp # Test file for ZK proof interface
+   ├── utilities.cpp, .hpp # Some utility functions
+   ├── verifiable_exponentiation.cpp, .hpp # VE(P) functionality, cf. Figure 8
+   ├── zkproof.hpp # Zero-knowledge proof system class interface
 ```
 
-### Security/Privacy Issues and Ethical Concerns  (Required for all badges)
+### Security/Privacy Issues and Ethical Concerns
 
 There are no Security/Privacy Issues and Ethical Concerns related to our code. Nonetheless, we stress that since this code provides a research prototype, using it in production is **discouraged**. 
 
-## Basic Requirements (Required for Functional and Reproduced badges)
+## Basic Requirements
 
-### Hardware Requirements  (Required for Functional and Reproduced badges)
+### Hardware Requirements
 
-We do not require any specific hardware to run our code. Our measurements were performed on an Intel(R) Core(TM) Ultra 5 235U CPU on a single core.
+Can run on a laptop (No special hardware requirements). Our measurements were performed on a Dell Pro 14 Plus laptop, using a single core of an Intel(R) Core(TM) Ultra 5 235U CPU.
 
-### Software Requirements (Required for Functional and Reproduced badges)
+### Software Requirements
 
-Our implementation is written in C++ and requires the following:
-- `cmake 3.14` for building
-- `clang-14` for compilation
+Our implementation is written in C++ and to be built requires the following:
+- `cmake 3.14`
+- `clang-14`
 - `python3` for building a Latex table from the benchmark output.
+
+We provide instructions to run the experiments in a container including all dependencies, that can be run using either of the following
+- `docker` version 29.3.0
+- `podman` version 5.2.2
+
+Our experiments were run on Ubuntu 24.04, and any operating system able to run a similar version of Docker or Podman should suffice.
 
 It also uses two external libraries:
 - `libsodium` for  *Ristretto* and *SHA2* implementations - more information can be found at https://github.com/jedisct1/libsodium. This is automatically fetched when building the docker container.
@@ -76,70 +90,116 @@ To execute the artefacts we support two settings, one for users with access to D
 
 We do not require the use of any machine learning model or dataset.
 
-### Estimated Time and Storage Consumption (Required for Functional and Reproduced badges)
+### Estimated Time and Storage Consumption
 
 The overall estimated time depends on the hardware specifications of the machine, as well as the type of environment used (Docker or Local). 
 
 Considering that the environment is all set and configured, the execution of the benchmarks should take ~20 min (this includes the 10 repeated runs for all benchmarks) and it uses ~34M of disk storage.
 
-## Environment (Required for all badges)
+## Environment
 
 We now describe the environment needs and setup commands, as well as link the main repository for further access.
 
-### Accessibility (Required for all badges)
+### Accessibility
 
-The implementation is found at this GitHub Repository: https://github.com/luizabrs/semi-open-messaging-groups/tree/main 
+The implementation is found at this GitHub Repository: https://github.com/luizabrs/semi-open-messaging-groups
 
-### Set up the environment (Required for Functional and Reproduced badges)
+### Set up the environment
 
-### 1. Running with Debian(Linux)
+The recommended way to run our experiments is by using a Docker container. We also provide instructions to run the experiments directly within a Debian session, without use of Docker.
+
+#### Setting up a Docker environment (recommended)
+
+To build the environment, run
+```bash
+git clone https://github.com/luizabrs/semi-open-messaging-groups
+cd semi-open-messaging-groups
+DOCKER=docker bash build.sh
+```
+
+If using Podman, replace `DOCKER=docker` with `DOCKER=podman` when invoking the above command.
+
+#### Setting up a Debian environment (alternative)
 
 To build the code in Debian 12, first install the following dependencies.
 ```bash
 sudo apt install -y --no-install-recommends git build-essential cmake clang-14 python3
+git clone https://github.com/luizabrs/semi-open-messaging-groups
+cd semi-open-messaging-groups
 sudo bash install_libsodium.sh
 ```
 Note, `install_libsodium.sh` will install libsodium system-wide, built from the `stable` branch of its repository.
 
-### 1.1 Running benchmarks
+### Testing the Environment
 
-The benchmarks can then be generated by running
-```bash
-cmake .
-make
-ulimit -s unlimited
-./mr_impl 2>benchmarks.json
-cp benchmarks.json host/benchmarks.json
-```
-The resulting data can be found in `benchmarks.json`.
-
-To generate Table 1 in the paper, after you generated `benchmarks.json`, run the following command in the repository's root directory
-```bash
-python3 benchmark_table.py
-```
-This will print the Latex source for the table in the paper.
-
-### 2. Running with Docker
-
-For ease of reproducibility, we offer a Dockerfile generating the environment described above.
-
-To build the environment, run
-```bash
-DOCKER=docker bash build.sh
-```
-To run the benchmark within the container, activate a session by running
+To test the environment, activate a session by running
 ```bash
 DOCKER=docker bash run.sh
 ```
-and in the resulting shell run the commands from [Running benchmarks](#11-running-benchmarks), which is the same as if you were running in Debian.
+and within the container run
+```bash
+make
+./mr_test
+```
 
-If using Podman, replace `DOCKER=docker` with `DOCKER=podman` when invoking the above commands.
+If using the Debian environment, the container activation command should be skipped.
+If using Podman rather than Docker, replace `DOCKER=docker` with `DOCKER=podman` in the activation command.
 
-### Expected run example
+## Artefact Evaluation
 
-By the time you configure everything and run the benchmarks, you should see the output trace of 10 protocol runs.
+### Main Results and Claims
 
-An **example** output for one protocol run for a small example such as `benchmarks(5, 4);`, where `group_size = 5` and `votes = 4`, is as follows:
+#### Main Result: Protocol Benchmarks
+
+Our main result is an implementation that shows the practical viability of our protocol. 
+We implemented:
+- DLOG and DLEQ proof systems in Section 4.3,
+- the verifiable exponentiation protocols in Section 5,
+- the base protocol from Section 6 (including all algorithms from Figure 9). 
+
+Our protocol scales up to 500 users, with a reasonable timing of 33s for `(users=500, votes=40)` and 42s for `(users=500, votes=80)`.
+
+Our benchmarks confirm that most computing time is spent on the ballot intersection calculation, as it has a runtime of `O(users * votes * |vote domain|)`. In deployments, this could be amortised by trivially parallelising the loop.
+
+### Experiments
+
+#### Experiment 1: Benchmark
+
+##### Using the Docker environment (recommended)
+
+To run the benchmark within the Docker container prepared [above](#setting-up-a-docker-environment-recommended), activate a session by running
+```bash
+DOCKER=docker bash run.sh
+```
+Note that this mounts the repository's root directory as `/root/host` within the container.
+
+The benchmarks can then be generated by running
+```bash
+make
+ulimit -s unlimited
+./mr_impl 2>benchmarks.json
+```
+To save the results from the container run, copy them into `/root/host`:
+```bash
+cp benchmarks.json host/benchmarks.json
+```
+
+##### Using the Debian environment (alternative)
+
+In this case, after [environment setup](#setting-up-a-debian-environment-alternative), simply perform the following commands in the root directory of the repository.
+
+The benchmarks can then be generated by running
+```bash
+make
+ulimit -s unlimited
+./mr_impl 2>benchmarks.json
+```
+The resulting data can be found in `benchmarks.json`.
+
+##### Expected run example
+
+The output of the benchmarks (`./mr_impl`) consists of the `benchmarks.json` file and of the traces of 10 protocol runs.
+An example output for one protocol run for a small example such as `benchmarks(5, 4);`, where `group_size = 5` and `votes = 4`, is as follows:
 
 ```
 .
@@ -203,28 +263,14 @@ deleting ballots for f0e77308c61edfe1cb9620ca6e49ac2ea80437f61b5a41693014a9646cf
 .
 .
 ```
- 
-## Artefact Evaluation (Required for Functional and Reproduced badges)
 
-### Main Results and Claims
+##### Extracting Paper Data from Benchmarks
 
-#### Main Result:
-
-Our main result is an implementation that shows the practical viability of our protocol. 
-We implemented:
-- DLOG and DLEQ proof systems in Section 4.3,
-- the verifiable exponentiation protocols in Section 5,
-- the base protocol from Section 6 (including all algorithms from Figure 9). 
-
-Our protocol scales up to 500 users, with a reasonable timing of 33s for `(users=500, votes=40)` and 42s for `(users=500, votes=80)`.
-
-Our benchmarks confirm that most computing time is spent on the ballot intersection calculation, as it has a runtime of `O(users * votes * |vote domain|)`. In deployments, this could be amortised by trivially parallelising the loop.
-
-### Experiments
-
-To obtain the results in the paper we used a machine that runs an Intel(R) Core(TM) Ultra 5 235U CPU on a single core. 
-
-Finally, running the commands in [Running benchmarks](#11-running-benchmarks), our code returns a Latex table containing the benchmarking numbers. These are the numbers reported in Sec. 7, Table 1 in the paper. 
+To generate Table 1 in the paper, after you generated `benchmarks.json`, run the following command in the repository's root directory:
+```bash
+python3 benchmark_table.py
+```
+This will print the Latex source Table 1 in Section 7 of the paper.
 
 <p align="center">
   <img src="./Results.png" />
@@ -232,10 +278,12 @@ Finally, running the commands in [Running benchmarks](#11-running-benchmarks), o
 
 In the table, for each benchmark associated with the parameters `(n,t)`, where `n` is the number of users and `t` is the number of votes received by the external user wishing to join the group. We take the average runtime and communication cost for 10 runs.
 
-## Limitations  (Required for Functional and Reproduced badges)
+## Limitations
 
-One of the limitations is that the current proof of concept implementation requires significant stack space for groups with more than 200 users. We enable this by using the command `ulimit -s unlimited` to release the stack memory limit. 
+One of the limitations is that the current proof of concept implementation requires significant stack space for groups with more than 200 users. We enable this by using the command `ulimit -s unlimited` to release the stack memory limit.
 
-## Notes on Reusability (Encouraged for all badges)
+The current codebase cannot reliably handle groups of size greater than 100 if the stack memory limit is not released.
+
+## Notes on Reusability
 
 This implementation is a research prototype, not production code. Yet, we aimed to design C++ interfaces that are general (through templating) and that closely follow the formal syntax of sigma protocols and zero-knowledge proof systems. This means that it should be possible to apply optimisations and replace components in our design without a significant labour overhead for the community.

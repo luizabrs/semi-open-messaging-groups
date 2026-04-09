@@ -27,8 +27,14 @@ add_executable(mr_impl
     src/parties.cpp
 )
 
+add_executable(mr_test
+    src/test.cpp
+)
+
+
 # link against libsodium
 target_link_libraries(mr_impl PRIVATE sodium)
+target_link_libraries(mr_test PRIVATE sodium)
 
 set(CMAKE_CXX_FLAGS_DEBUG_INIT "-Wall -g")
 set(CMAKE_CXX_FLAGS_RELEASE_INIT "-Wall")

@@ -1,4 +1,5 @@
 .container_run
+.DS_Store
 mr_impl
 CMakeCache.txt
 CMakeFiles/
