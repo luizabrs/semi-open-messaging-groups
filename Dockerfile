@@ -18,7 +18,6 @@ COPY src /root/src
 COPY CMakeLists.txt /root/CMakeLists.txt
 COPY benchmarks.sh /root/benchmarks.sh
 COPY benchmark_table.py /root/benchmark_table.py
-RUN cmake .
 RUN mkdir /root/host
 
 CMD [ "bash" ]
