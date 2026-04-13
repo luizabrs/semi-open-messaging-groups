@@ -24,7 +24,7 @@ semi-open-messaging-groups/
    ├── benchmarks.sh # Script to run benchmark and forward results to JSON
    ├── build.sh # Script to build a Docker container to run experiments in
    ├── CMakeLists.txt # CMake build script
-   ├── Dockefile # Dockerfile for the container
+   ├── Dockerfile # Dockerfile for the container
    ├── install_libsodium.sh # Script for installing libsodium (used by Dockerfile)
    ├── LICENSE # Source code license
    ├── README.md # Repository's README file
@@ -270,7 +270,7 @@ To generate Table 1 in the paper, after you generated `benchmarks.json`, run the
 ```bash
 python3 benchmark_table.py
 ```
-This will print the Latex source Table 1 in Section 7 of the paper.
+This will print a text version of Table 1 in Section 7 of the paper.
 
 <p align="center">
   <img src="./Results.png" />
